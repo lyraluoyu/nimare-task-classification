@@ -1,0 +1,2 @@
+git+https://github.com/neurostuff/NiMARE.git@0b9a328e7faaa12f9eec7f6225922f0819271af1
+pyarrow==24.0.0

@@ -1,0 +1,18 @@
+# Downloaded atlases and runtime caches
+atlas_cache/
+cache/
+.cache/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+
+# Local Python environments
+.venv/
+venv/
+env/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Keep studyset JSON/parquet files and result PNGs tracked.

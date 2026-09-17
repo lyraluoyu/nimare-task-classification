@@ -1,0 +1,250 @@
+{
+  "annotations": [
+    {
+      "id": "DZr5AjsPDTqL"
+    }
+  ],
+  "format": "nimare-studyset-parquet",
+  "id": "r2ac7cKYWeYs-string-normalized-ml-15tasks-singlelabel",
+  "name": "neurostore-studyset-nightly-ml",
+  "tables": {
+    "analyses": "analyses.parquet",
+    "annotations": "annotations.parquet",
+    "coordinates": "coordinates.parquet",
+    "images": "images.parquet",
+    "metadata": "metadata.parquet",
+    "studies": "studies.parquet",
+    "texts": "texts.parquet"
+  },
+  "version": 1,
+  "derived_from": {
+    "archive": "neurostore-studyset-nightly.tar.gz",
+    "studyset_id": "r2ac7cKYWeYs"
+  },
+  "subset_of": {
+    "name": "neurostore-studyset-nightly-new",
+    "id": "r2ac7cKYWeYs-string-normalized",
+    "annotations_sha256": "4101cf235f19097196911bd6c08baf6922faf70defe8c0707def4bbbe35fe269",
+    "studyset_json_sha256": "60eb07b7375e2d0c7498d4e5e7dd90d839c9204f11b6f2c8b15c1197d14daad6"
+  },
+  "ml_subset": {
+    "created_at_utc": "2026-09-09T08:22:01.648619+00:00",
+    "selection_unit": "analysis",
+    "selection_rule": "retain whole studies whose distinct TaskExtractor.fMRITasks[*].TaskName set contains exactly one canonical task; then retain task classes represented by at least 100 studies",
+    "canonical_task_names": [
+      "n-back task",
+      "Go/No-Go Task",
+      "Stroop Task",
+      "Emotion Regulation Task",
+      "Monetary Incentive Delay (MID) Task",
+      "Stop-Signal Task",
+      "Oddball Task",
+      "Lexical Decision Task",
+      "Memory Retrieval Task",
+      "Gambling Task",
+      "Finger Tapping Task",
+      "Face Processing Task",
+      "Task Switching Paradigm",
+      "Memory Encoding Task",
+      "Fear Conditioning Task"
+    ],
+    "all_columns_preserved": true,
+    "all_rows_for_selected_analysis_ids_copied_from_analysis_level_tables": true,
+    "all_coordinate_rows_for_selected_analysis_ids_copied": true,
+    "all_study_rows_for_referenced_study_ids_copied": true,
+    "cooccurring_nonselected_task_names_preserved": false,
+    "analyses_with_cooccurring_nonselected_task_names": 0,
+    "row_counts": {
+      "studies": 2967,
+      "analyses": 11005,
+      "coordinates": 86981,
+      "metadata": 11005,
+      "annotations": 11005,
+      "images": 11005,
+      "texts": 11005
+    },
+    "family_counts": [
+      {
+        "task": "n-back task",
+        "studies": 554,
+        "analyses": 1830,
+        "cells": 1830
+      },
+      {
+        "task": "Go/No-Go Task",
+        "studies": 320,
+        "analyses": 1182,
+        "cells": 1182
+      },
+      {
+        "task": "Stroop Task",
+        "studies": 317,
+        "analyses": 1126,
+        "cells": 1126
+      },
+      {
+        "task": "Emotion Regulation Task",
+        "studies": 237,
+        "analyses": 1017,
+        "cells": 1017
+      },
+      {
+        "task": "Monetary Incentive Delay (MID) Task",
+        "studies": 169,
+        "analyses": 624,
+        "cells": 624
+      },
+      {
+        "task": "Stop-Signal Task",
+        "studies": 153,
+        "analyses": 518,
+        "cells": 518
+      },
+      {
+        "task": "Oddball Task",
+        "studies": 160,
+        "analyses": 569,
+        "cells": 569
+      },
+      {
+        "task": "Lexical Decision Task",
+        "studies": 143,
+        "analyses": 568,
+        "cells": 568
+      },
+      {
+        "task": "Memory Retrieval Task",
+        "studies": 151,
+        "analyses": 631,
+        "cells": 631
+      },
+      {
+        "task": "Gambling Task",
+        "studies": 143,
+        "analyses": 451,
+        "cells": 451
+      },
+      {
+        "task": "Finger Tapping Task",
+        "studies": 131,
+        "analyses": 501,
+        "cells": 501
+      },
+      {
+        "task": "Face Processing Task",
+        "studies": 136,
+        "analyses": 617,
+        "cells": 617
+      },
+      {
+        "task": "Task Switching Paradigm",
+        "studies": 121,
+        "analyses": 297,
+        "cells": 297
+      },
+      {
+        "task": "Memory Encoding Task",
+        "studies": 122,
+        "analyses": 444,
+        "cells": 444
+      },
+      {
+        "task": "Fear Conditioning Task",
+        "studies": 110,
+        "analyses": 630,
+        "cells": 630
+      }
+    ],
+    "source_files_sha256": {
+      "analyses.parquet": "41d34b40c06df988a0576716979673d328710dc9cd5ce28817f85dd3beae863e",
+      "annotations.parquet": "4101cf235f19097196911bd6c08baf6922faf70defe8c0707def4bbbe35fe269",
+      "coordinates.parquet": "fa86698613d0c44a2736e9ecbbee2a3d20c69a5ecf592d5a222641fb3e382f12",
+      "images.parquet": "fc63f32ec8c85c5071ae3ad9e4729f123094da6fdfc96497b24a0be38f9a6a4b",
+      "metadata.parquet": "70736a0b8862ddf0fcc0a88e5046ad2254c0ccc8d7e3ee00d4c90c7a266093b1",
+      "studies.parquet": "c04985941db07e5e4152390845171ec72b021070609e3ace994aa5e2e10eef10",
+      "texts.parquet": "fd8f96e89aee360f0b572a0eb7640765db9b8e3b8ed65cf44bc4d1c4de9109c4",
+      "studyset.json": "60eb07b7375e2d0c7498d4e5e7dd90d839c9204f11b6f2c8b15c1197d14daad6"
+    },
+    "target_field": {
+      "source": "metadata",
+      "field": "comparison_task"
+    },
+    "single_label_filter": {
+      "applied_at_utc": "2026-09-09T09:23:09.608588+00:00",
+      "scope": "whole study",
+      "task_fields": [
+        "TaskExtractor.fMRITasks[0].TaskName",
+        "TaskExtractor.fMRITasks[1].TaskName",
+        "TaskExtractor.fMRITasks[2].TaskName",
+        "TaskExtractor.fMRITasks[3].TaskName",
+        "TaskExtractor.fMRITasks[4].TaskName",
+        "TaskExtractor.fMRITasks[5].TaskName",
+        "TaskExtractor.fMRITasks[6].TaskName",
+        "TaskExtractor.fMRITasks[7].TaskName",
+        "TaskExtractor.fMRITasks[8].TaskName"
+      ],
+      "rule": "exactly one distinct nonempty fMRITasks TaskName per retained study",
+      "minimum_studies_per_task": 100,
+      "before": {
+        "tasks": 19,
+        "studies": 3603,
+        "analyses": 13549
+      },
+      "removed_multitask": {
+        "studies": 264,
+        "analyses": 1089
+      },
+      "after_single_task": {
+        "studies": 3339,
+        "analyses": 12460
+      },
+      "removed_below_100_studies": [
+        {
+          "task": "Motor Imagery Task",
+          "studies": 93,
+          "analyses": 382
+        },
+        {
+          "task": "Recognition Memory Task",
+          "studies": 94,
+          "analyses": 377
+        },
+        {
+          "task": "Flanker Task",
+          "studies": 90,
+          "analyses": 328
+        },
+        {
+          "task": "Sentence Comprehension Task",
+          "studies": 95,
+          "analyses": 368
+        }
+      ],
+      "after": {
+        "tasks": 15,
+        "studies": 2967,
+        "analyses": 11005
+      },
+      "comparison_task": "metadata.comparison_task",
+      "pre_filter_target_files_sha256": {
+        "analyses.parquet": "b76b9f002d856e89c9b2697cefc56020ff04483c0efa01a0a9303016458ed6eb",
+        "annotations.parquet": "a05bd807072d2183a4d4f6fc13db9ef4eeb36d61897fdd8af9cd57afd1753399",
+        "coordinates.parquet": "55c0a9dec9832f0c81d42b3c329e6e8683db97cd9367b5cc6e1c389c44486944",
+        "images.parquet": "fde37179d58206bf3e9872822ce94777256e5ff6060fab93527329820627593b",
+        "metadata.parquet": "70654cece122dae85796bcd372469a6d240eedb2e305566fbf98ab38cfcc3cbf",
+        "studies.parquet": "683eeba4365b879f7af16c6091dd9aa21907e8adde05cc4ac10ac30be93c40a1",
+        "studyset.json": "91a425350b54f2d6cd15f818ed96481ecdccfd304e619293ef0504af6b782c38",
+        "texts.parquet": "f409ae3d30f89cc60ff6284ea853f5e5e35567646814059fd51a77170249312a"
+      }
+    },
+    "output_table_sha256": {
+      "studies.parquet": "9a5b27d4bc98de124d35c156f65c284ec72d8233cf38db8c53b537566e1cffae",
+      "analyses.parquet": "c94c542932bbdd30ec769021731109353c1c2f132fa52ac249ffd9b5fd0b653c",
+      "annotations.parquet": "79cd1c237433fded1359b545e33eea45754a2732b710154d2f697f6c020b3c9a",
+      "metadata.parquet": "7ffb868c41aec8578ec54fcf4205c88517987c12e19b585a2431797502d46514",
+      "coordinates.parquet": "0b00ed78d390afc983b2bd46d8823a99639e347872f34b0253bef63b47cd7291",
+      "images.parquet": "07e357bed07e7d9fc52a155bf0c7edf1817139c53a2e8ba8ba9221b6d6251ac9",
+      "texts.parquet": "94c66395fd414fc1ae6db75328c8bf7ebd3aa3ce6af51a515fd4009d08209c06"
+    }
+  }
+}
