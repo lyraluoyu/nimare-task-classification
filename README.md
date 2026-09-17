@@ -31,8 +31,7 @@ recorded in `studyset.json` inside the dataset folder.
 
 - MKDA modeled activation maps with a 10 mm kernel; labels from
   `metadata.comparison_task`. Analyses without coordinates are dropped.
-- Stratified 90%/10% train/test split by study, with random seed 13. Analyses from
-  the same study stay in the same split.
+- Stratified 90%/10% train/test split by study. Analyses from the same study stay in the same split.
 - TruncatedSVD with 256 components or DiFuMo with 256 maps at 2 mm resolution,
   followed by StandardScaler and logistic regression (`class_weight="balanced"`,
   `max_iter=1000`).
